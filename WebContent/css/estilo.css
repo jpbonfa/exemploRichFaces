@@ -1,0 +1,175 @@
+.body1 {
+	background-size: 1400px 1100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../img/backgroundFilme.jpg");
+}
+
+.body2 {
+	background-size: 1400px 1100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../img/backgroundIngresso.jpg");
+}
+
+.body3 {
+	background-size: 1400px 1100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../img/backgroundSala.jpg");
+}
+
+.body4 {
+	background-size: 1400px 1100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../img/consultaFilme.jpg");
+}
+
+.body5 {
+	background-size: 1400px 1100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../img/ConsultaTicket.jpg");
+}
+
+.body6 {
+	background-size: 1400px 1100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../img/consultaSala.jpg");
+}
+
+.body7 {
+	background-size: 1400px 1100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../img/alterarFilme.jpg");
+}
+
+.body8 {
+	background-size: 1400px 1100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../img/alterarSala.jpg");
+}
+
+.body9 {
+	background-size: 1400px 1100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../img/alterarIngresso.jpg");
+}
+
+.titulo1 {
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #887e4a;
+	font-size: 4em;
+	color: black;
+}
+
+.titulo2 {
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #ff0080;
+	font-size: 4em;
+	color: black;
+}
+
+.titulo3 {
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #ff0d00;
+	font-size: 4em;
+	color: black;
+}
+
+.titulo4 {
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #ffff00;
+	font-size: 4em;
+	color: black;
+}
+
+.titulo5 {
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #8080ff;
+	font-size: 4em;
+	color: black;
+}
+
+.titulo6 {
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #ff0000;
+	font-size: 4em;
+	color: black;
+}
+
+.titulo7 {
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #831707;
+	font-size: 4em;
+	color: black;
+}
+
+.titulo8 {
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #ff0000;
+	font-size: 4em;
+	color: black;
+}
+
+.titulo9 {
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #ff0000;
+	font-size: 4em;
+	color: black;
+}
+
+.botoes1 {
+	border-radius: 50%;
+	border: 2px solid #808040;
+	font-size: 16px;
+}
+.botoes2 {
+	border-radius: 50%;
+	border: 2px solid #ff0080;
+	font-size: 16px;
+}
+.botoes3 {
+	border-radius: 50%;
+	border: 2px solid red;
+	font-size: 16px;
+}
+.botoes4 {
+	background-color: #ffff00; color: black;
+	border-radius: 50%;
+	border: 2px solid #000000;
+	font-size: 18px;
+}
+.botoes5 {
+	background-color: #0000ff; color: black;
+	border-radius: 50%;
+	border: 2px solid #000000;
+	font-size: 18px;;
+}
+.botoes6 {
+	background-color: #ff0000; color: black;
+	border-radius: 50%;
+	border: 2px solid #ffffff;
+	font-size: 18px;;
+}
+.botoes7 {
+	
+	border-radius: 12px;
+	border: 2px solid #804000;
+	font-size: 16px;
+}
+.botoes8 {
+	border-radius: 12px;
+	border: 2px solid #60614e;
+	font-size: 16px;
+}
+.botoes9 {
+	border-radius: 12p%;
+	border: 2px solid #ff0000;
+	font-size: 16px;
+}

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="1.2"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
+
+	<!-- MAPEAMENTO DAS CLASSES DE CONTROLE -->
+	<managed-bean>
+		<managed-bean-name>navegacaoBacking</managed-bean-name>
+		<managed-bean-class>br.com.treinamento.richfaces.backingbean.NavegacaoBacking</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<!-- MAPEAMENTO DAS CLASSES DE CONTROLE -->
+	<managed-bean>
+		<managed-bean-name>filmeBacking</managed-bean-name>
+		<managed-bean-class>br.com.treinamento.richfaces.backingbean.FilmeBacking</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<!-- MAPEAMENTO DAS CLASSES DE CONTROLE -->
+	<managed-bean>
+		<managed-bean-name>ingressoBacking</managed-bean-name>
+		<managed-bean-class>br.com.treinamento.richfaces.backingbean.IngressoBacking</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<!-- MAPEAMENTO DAS CLASSES DE CONTROLE -->
+	<managed-bean>
+		<managed-bean-name>salaBacking</managed-bean-name>
+		<managed-bean-class>br.com.treinamento.richfaces.backingbean.SalaBacking</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+
+	<!-- REGRAS DE NAVEGAÇÃO DO MENU -->
+	<navigation-rule>
+		<navigation-case>
+			<from-action>#{filmeBacking.cadastrarFilme}</from-action>
+			<to-view-id>/cadastrarFilme.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<navigation-case>
+			<from-action>#{filmeBacking.alterar}</from-action>
+			<to-view-id>/alterarFilme.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<navigation-case>
+			<from-action>#{filmeBacking.consultarFilme}</from-action>
+			<to-view-id>/consultarFilme.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<navigation-case>
+			<from-action>#{ingressoBacking.cadastrarIngresso}</from-action>
+			<to-view-id>/cadastrarIngresso.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<navigation-case>
+			<from-action>#{ingressoBacking.alterar}</from-action>
+			<to-view-id>/alterarIngresso.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<navigation-case>
+			<from-action>#{ingressoBacking.consultarIngresso}</from-action>
+			<to-view-id>/consultarIngresso.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<navigation-case>
+			<from-action>#{salaBacking.cadastrarSala}</from-action>
+			<to-view-id>/cadastrarSala.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<navigation-case>
+			<from-action>#{salaBacking.alterar}</from-action>
+			<to-view-id>/alterarSala.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<navigation-case>
+			<from-action>#{salaBacking.consultarSala}</from-action>
+			<to-view-id>/consultarSala.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+
+	<!-- NAVEGAÇÃO DE RETORNO AO INDEX -->
+	<navigation-rule>
+		<from-view-id>/cadastrarIngresso.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>voltar</from-outcome>
+			<to-view-id>/index.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/cadastrarSala.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>voltar</from-outcome>
+			<to-view-id>/index.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/cadastrarFilme.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>voltar</from-outcome>
+			<to-view-id>/index.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+
+		<from-view-id>/alterarFilme.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>voltar</from-outcome>
+			<to-view-id>/consultarFilme.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/alterarIngresso.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>voltar</from-outcome>
+			<to-view-id>/consultarIngresso.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/alterarSala.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>voltar</from-outcome>
+			<to-view-id>/consultarSala.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/consultarFilme.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>voltar</from-outcome>
+			<to-view-id>/index.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/consultarIngresso.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>voltar</from-outcome>
+			<to-view-id>/index.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/consultarSala.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>voltar</from-outcome>
+			<to-view-id>/index.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+
+</faces-config>

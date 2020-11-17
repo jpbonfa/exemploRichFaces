@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::0" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{filmeBacking.cadastrarFilme}:#cadastrarFilme.jsp"
+    NAME="output" PATH="/cadastrarFilme.jsp"
+    TARGET="rules:#cadastrarFilme.jsp"
+    TITLE="#{filmeBacking.cadastrarFilme}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#cadastrarFilme.jsp"
+  PATH="/cadastrarFilme.jsp" SHAPE="240,33,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cadastrarFilme.jsp:0" NAME="item"
+   PATH="/cadastrarFilme.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="voltar::#index.jsp" NAME="output"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="voltar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::1" SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::1" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID=":#{filmeBacking.alterar}:#alterarFilme.jsp"
+    NAME="output" PATH="/alterarFilme.jsp"
+    TARGET="rules:#alterarFilme.jsp"
+    TITLE="#{filmeBacking.alterar}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#index.jsp" PATH="/index.jsp"
+  SHAPE="448,17,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#cadastrarIngresso.jsp"
+  PATH="/cadastrarIngresso.jsp" SHAPE="240,257,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cadastrarIngresso.jsp:0" NAME="item"
+   PATH="/cadastrarIngresso.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="voltar::#index.jsp" NAME="output"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="voltar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::2" SHAPE="32,241,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::2" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{filmeBacking.consultarFilme}:#consultarFilme.jsp"
+    NAME="output" PATH="/consultarFilme.jsp"
+    TARGET="rules:#consultarFilme.jsp"
+    TITLE="#{filmeBacking.consultarFilme}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#cadastrarSala.jsp" PATH="/cadastrarSala.jsp"
+  SHAPE="240,369,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cadastrarSala.jsp:0" NAME="item"
+   PATH="/cadastrarSala.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="voltar::#index.jsp" NAME="output"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="voltar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::3" SHAPE="32,353,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::3" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{ingressoBacking.cadastrarIngresso}:#cadastrarIngresso.jsp"
+    NAME="output" PATH="/cadastrarIngresso.jsp"
+    TARGET="rules:#cadastrarIngresso.jsp"
+    TITLE="#{ingressoBacking.cadastrarIngresso}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#consultarFilme.jsp"
+  PATH="/consultarFilme.jsp" SHAPE="240,481,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#consultarFilme.jsp:0" NAME="item"
+   PATH="/consultarFilme.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="voltar::#index.jsp" NAME="output"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="voltar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::4" SHAPE="32,465,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::4" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{ingressoBacking.alterar}:#alterarIngresso.jsp" NAME="output"
+    PATH="/alterarIngresso.jsp" TARGET="rules:#alterarIngresso.jsp"
+    TITLE="#{ingressoBacking.alterar}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#consultarSala.jsp" PATH="/consultarSala.jsp"
+  SHAPE="240,593,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#consultarSala.jsp:0" NAME="item"
+   PATH="/consultarSala.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="voltar::#index.jsp" NAME="output"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="voltar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::5" SHAPE="32,577,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::5" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{ingressoBacking.consultarIngresso}:#consultarIngresso.jsp"
+    NAME="output" PATH="/consultarIngresso.jsp"
+    TARGET="rules:#consultarIngresso.jsp"
+    TITLE="#{ingressoBacking.consultarIngresso}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#consultarIngresso.jsp"
+  PATH="/consultarIngresso.jsp" SHAPE="240,705,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#consultarIngresso.jsp:0" NAME="item"
+   PATH="/consultarIngresso.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="voltar::#index.jsp" NAME="output"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="voltar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::6" SHAPE="32,689,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::6" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{salaBacking.cadastrarSala}:#cadastrarSala.jsp" NAME="output"
+    PATH="/cadastrarSala.jsp" TARGET="rules:#cadastrarSala.jsp"
+    TITLE="#{salaBacking.cadastrarSala}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#alterarFilme.jsp" PATH="/alterarFilme.jsp"
+  SHAPE="240,817,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#alterarFilme.jsp:0" NAME="item"
+   PATH="/alterarFilme.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="voltar::#consultarFilme.jsp" NAME="output"
+    PATH="/consultarFilme.jsp" TARGET="rules:#consultarFilme.jsp"
+    TITLE="voltar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::7" SHAPE="32,801,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::7" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID=":#{salaBacking.alterar}:#alterarSala.jsp"
+    NAME="output" PATH="/alterarSala.jsp"
+    TARGET="rules:#alterarSala.jsp" TITLE="#{salaBacking.alterar}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#alterarIngresso.jsp"
+  PATH="/alterarIngresso.jsp" SHAPE="240,929,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#alterarIngresso.jsp:0" NAME="item"
+   PATH="/alterarIngresso.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="voltar::#consultarIngresso.jsp"
+    NAME="output" PATH="/consultarIngresso.jsp"
+    TARGET="rules:#consultarIngresso.jsp" TITLE="voltar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#alterarSala.jsp" PATH="/alterarSala.jsp"
+  SHAPE="240,145,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#alterarSala.jsp:0" NAME="item"
+   PATH="/alterarSala.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="voltar::#consultarSala.jsp" NAME="output"
+    PATH="/consultarSala.jsp" TARGET="rules:#consultarSala.jsp"
+    TITLE="voltar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::8" SHAPE="32,913,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::8" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{salaBacking.consultarSala}:#consultarSala.jsp" NAME="output"
+    PATH="/consultarSala.jsp" TARGET="rules:#consultarSala.jsp"
+    TITLE="#{salaBacking.consultarSala}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>
